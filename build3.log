@@ -1,0 +1,37 @@
+
+> Configure project :
+Fabric Loom: 1.15.5
+
+> Task :compileJava FAILED
+C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:3: error: package net.minecraft.entity.passive does not exist
+import net.minecraft.entity.passive.BeeEntity;
+                                   ^
+C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:9: error: cannot find symbol
+@Mixin(BeeEntity.class)
+       ^
+  symbol: class BeeEntity
+C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:13: error: cannot find symbol
+		((BeeEntity) (Object) this).setBaby(true);
+		  ^
+  symbol:   class BeeEntity
+  location: class BeeEntityMixin
+3 errors
+
+[Incubating] Problems report is available at: file:///C:/Users/gabri/Documents/CodingRepos/tinybees-26.1-Fabric/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:3: error: package net.minecraft.entity.passive does not exist
+  import net.minecraft.entity.passive.BeeEntity;
+                                     ^
+  3 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 3s
+1 actionable task: 1 executed

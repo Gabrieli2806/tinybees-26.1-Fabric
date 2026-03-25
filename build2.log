@@ -1,0 +1,66 @@
+
+> Configure project :
+Fabric Loom: 1.15.5
+
+> Task :compileJava FAILED
+C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:3: error: package net.minecraft.entity.passive does not exist
+import net.minecraft.entity.passive.BeeEntity;
+                                   ^
+C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\ExampleMixin.java:3: error: cannot access MinecraftServer
+import net.minecraft.server.MinecraftServer;
+                           ^
+  bad class file: C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\.gradle\loom-cache\minecraftMaven\net\minecraft\minecraft-merged-9a7fd27717\26.1\minecraft-merged-9a7fd27717-26.1.jar(/net/minecraft/server/MinecraftServer.class)
+    class file has wrong version 69.0, should be 65.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:9: error: cannot find symbol
+@Mixin(BeeEntity.class)
+       ^
+  symbol: class BeeEntity
+C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\ExampleMixin.java:9: error: cannot find symbol
+@Mixin(MinecraftServer.class)
+       ^
+  symbol: class MinecraftServer
+C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:13: error: cannot find symbol
+		((BeeEntity) (Object) this).setBaby(true);
+		  ^
+  symbol:   class BeeEntity
+  location: class BeeEntityMixin
+5 errors
+
+[Incubating] Problems report is available at: file:///C:/Users/gabri/Documents/CodingRepos/tinybees-26.1-Fabric/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\ExampleMixin.java:3: error: cannot access MinecraftServer
+  import net.minecraft.server.MinecraftServer;
+                             ^
+    bad class file: C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\.gradle\loom-cache\minecraftMaven\net\minecraft\minecraft-merged-9a7fd27717\26.1\minecraft-merged-9a7fd27717-26.1.jar(/net/minecraft/server/MinecraftServer.class)
+      class file has wrong version 69.0, should be 65.0
+      Please remove or make sure it appears in the correct subdirectory of the classpath.
+  C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:13: error: cannot find symbol
+  		((BeeEntity) (Object) this).setBaby(true);
+  		  ^
+    symbol:   class BeeEntity
+    location: class BeeEntityMixin
+  C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:9: error: cannot find symbol
+  @Mixin(BeeEntity.class)
+         ^
+    symbol: class BeeEntity
+  C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\ExampleMixin.java:9: error: cannot find symbol
+  @Mixin(MinecraftServer.class)
+         ^
+    symbol: class MinecraftServer
+  C:\Users\gabri\Documents\CodingRepos\tinybees-26.1-Fabric\src\main\java\com\g2806\tinybees\mixin\BeeEntityMixin.java:3: error: package net.minecraft.entity.passive does not exist
+  import net.minecraft.entity.passive.BeeEntity;
+                                     ^
+  5 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 2s
+1 actionable task: 1 executed

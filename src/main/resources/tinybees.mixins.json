@@ -3,7 +3,8 @@
 	"package": "com.g2806.tinybees.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"BeeEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
