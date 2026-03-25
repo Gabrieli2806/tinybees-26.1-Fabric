@@ -13,7 +13,6 @@ is a simple Fabric mod that makes all bees look more tiny. It gives the game a m
 **Normal Bee**
 
 ![Normalbee](https://cdn.modrinth.com/data/cached_images/575fd215785baf7183f7a37f818f78f7167b12eb.png)
-*Tiny Bees (Left) vs Normal Bees (Right) comparison.*
 
 ---
 
