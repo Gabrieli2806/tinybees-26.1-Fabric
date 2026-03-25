@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "tinybees",
+	"version": "${version}",
+	"name": "TinyBees",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Gabrieli2806"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Gabrieli2806/tinybees"
+	},
+	"license": "MIT",
+	"icon": "assets/tinybees/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.g2806.tinybees.TinyBees"
+		]
+	},
+	"mixins": [
+		"tinybees.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
